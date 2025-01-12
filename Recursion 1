@@ -1,0 +1,23 @@
+class Solution {
+
+    int cnt=1;
+    public void printNos(int n) {
+        // Your code here
+        //int cnt = 1;
+        if(cnt>n)
+        {
+            return;
+        }
+        System.out.print(cnt+" ");
+        cnt++;
+        
+        printNos(n);
+    }
+}
+
+For Input: 
+10
+Your Output: 
+1 2 3 4 5 6 7 8 9 10
+Expected Output: 
+1 2 3 4 5 6 7 8 9 10
