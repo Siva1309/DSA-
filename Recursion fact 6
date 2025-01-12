@@ -1,0 +1,17 @@
+class Solution {
+    static ArrayList<Long> factorialNumbers(long n) {
+        // code here
+        ArrayList<Long> resutl = new ArrayList<>();
+        
+        long fact=1;
+        long i=1;
+        
+        while(fact<=n) //2<=n 6<=3
+        {
+            resutl.add(fact); // fact 1 2 
+            i++;             // i = 2 3 
+            fact*=i;          // 1*2 = 2*3 = 6 
+        }
+        return resutl;
+    }
+}
